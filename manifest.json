@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "btbtt download helper",
+  "description": "btbtt download helper.",
+  "homepage_url": "https://github.com/op351/btbtt_chrome",
+  "version": "1.1",
+  "icons": {
+    "48": "icons/icon.png",
+    "96": "icons/icon@2x.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+                  "*://*.btbtt10.com/*",
+                  "*://*.btbtt11.com/*",
+                  "*://*.btbtt12.com/*",
+                  "*://*.btbtt13.com/*",
+                  "*://*.btbtt14.com/*",
+                  "*://*.btbtt15.com/*",
+                  "*://*.btbtt16.com/*",
+                  "*://*.btbtt17.com/*",
+                  "*://*.btbtt18.com/*",
+                  "*://*.btbtt19.com/*",
+                  "*://*.btbtt20.com/*",
+                  "*://*.bt529.com/*",
+                  "*://*.bt5268.com/*",
+                  "*://*.bt5288.com/*",
+                  "*://*.bt5298.com/*"],
+      "js": ["./inject.js","./filesaver.js","./jszip.js", "./download.js", "./upload.js"]
+    }
+  ],
+  "permissions": [],
+  "web_accessible_resources": [
+    {
+      "resources": ["img/*", "btbtt.css"],
+      "matches": [
+                  "*://*.btbtt10.com/*",
+                  "*://*.btbtt11.com/*",
+                  "*://*.btbtt12.com/*",
+                  "*://*.btbtt13.com/*",
+                  "*://*.btbtt14.com/*",
+                  "*://*.btbtt15.com/*",
+                  "*://*.btbtt16.com/*",
+                  "*://*.btbtt17.com/*",
+                  "*://*.btbtt18.com/*",
+                  "*://*.btbtt19.com/*",
+                  "*://*.btbtt20.com/*",
+                  "*://*.bt529.com/*",
+                  "*://*.bt5268.com/*",
+                  "*://*.bt5288.com/*",
+                  "*://*.bt5298.com/*"]
+    }
+  ]
+}
